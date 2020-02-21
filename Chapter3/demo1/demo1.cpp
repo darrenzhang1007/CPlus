@@ -5,7 +5,7 @@
 
 # include <assert.h>
 # include <iostream>
-using namespace std;
+using namespace std; // 命名空间
 
 
 // 二进制转无符号整型
@@ -25,7 +25,18 @@ int main()
 {
 	int A = 10;
 	int B = 20;
+	/* homework_test
+	cout << sizeof(char) << endl;
+	cout << sizeof(short) << endl;
+	cout << sizeof(int) << endl;
+	cout << sizeof(float) << endl;
+	cout << sizeof(double) << endl;
 
+	int x, y, z, a;
+	a = (x = 10, y = 20, z = x + y);
+	cout << a << endl;
+	*/
+	
 	//// 算术运算符示例
 	//std::cout << A + B << std::endl;    // 30
 	//cout << A - B << endl;     // -10
@@ -49,7 +60,7 @@ int main()
     
 	//// 逻辑运算符示例
 	//bool bA = false, bB = true;
-	//// to be or not to be
+	//// to be or not to be, that`s a question.
 	//cout << ( bA == true || bA != true ) << endl;   // 1
 	//cout << (bB == true || bB != true) << endl;   // 1
 	//// 德*摩根率
@@ -80,28 +91,28 @@ int main()
 
 
 	//// 赋值运算符
-	//int C = A + B;
-	//cout << C << endl;
-	//C += A;
-	//cout << C << endl;
-	//C -= A;
-	//cout << C << endl;
-	//C *= A;
-	//cout << C << endl;
-	//C /= A;
-	//cout << C << endl;
-	//C %= A;
-	//cout << C << endl;
-	//C <<= A;
-	//cout << C << endl;
-	//C >>= A;
-	//cout << C << endl;
-	//C &= A;
-	//cout << C << endl;
-	//C ^= A;
-	//cout << C << endl;
-	//C |= A;
-	//cout << C << endl;
+	/*int C = A + B;
+	cout << C << endl;
+	C += A;
+	cout << C << endl;
+	C -= A;
+	cout << C << endl;
+	C *= A;
+	cout << C << endl;
+	C /= A;
+	cout << C << endl;
+	C %= A;
+	cout << C << endl;
+	C <<= A;
+	cout << C << endl;
+	C >>= A;
+	cout << C << endl;
+	C &= A;
+	cout << C << endl;
+	C ^= A;
+	cout << C << endl;
+	C |= A;
+	cout << C << endl;*/
 
 	// 杂项运算符示例
 	//cout << sizeof(A) << endl;   // 4
@@ -131,6 +142,8 @@ int main()
 	//Week w;
 	//cout << w.Friday << endl;  // 5
 	//cout << sizeof(w) << endl; // ?
+	//cout << sizeof(w.Sunday) << endl;
+	//cout << sizeof(w) << endl;
 
     //  补码机器数调整展示
 	//int i1 = 0;
@@ -144,7 +157,7 @@ int main()
 	//unsigned int  u4 = 2147483647;
 
    // 补码的真值验证
-	cout << B2T(0x00000000) << endl;
+	/*cout << B2T(0x00000000) << endl;
 	cout << B2T(0xFFFFFFFF) << endl;
 	cout << B2T(0x80000000) << endl;
 	cout << B2T(0x7FFFFFFF) << endl;
@@ -152,7 +165,7 @@ int main()
 	cout << B2U(0x00000000) << endl;
 	cout << B2U(0xFFFFFFFF) << endl;
 	cout << B2U(0x80000000) << endl;
-	cout << B2U(0x7FFFFFFF) << endl;
+	cout << B2U(0x7FFFFFFF) << endl;*/
 
 
     return 0;
