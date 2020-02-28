@@ -1,5 +1,0 @@
-﻿  stdafx.cpp
-  demo5-2.cpp
-h:\cplus_learning\chapter5\demo5-2\demo5-2\demo5-2.cpp(18): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
-  demo5-2.vcxproj -> H:\CPlus_Learning\Chapter5\demo5-2\Debug\demo5-2.exe
-  demo5-2.vcxproj -> H:\CPlus_Learning\Chapter5\demo5-2\Debug\demo5-2.pdb (Full PDB)
