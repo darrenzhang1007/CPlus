@@ -15,3 +15,10 @@
 /Chapter5/demo5-7/.vs/demo5-7/v14
 /Chapter5/demo5-7/Debug
 /Chapter5/demo5-7/demo5-7/Debug
+*.suo
+/Chapter5/09_unique_ptr/09_unique_ptr/Debug
+/Chapter5/09_unique_ptr/Debug
+/Chapter5/09_unique_ptr/ipch/09_UNIQUE_PTR-e6d4ab67
+/Chapter5/demo5-8/Debug
+/Chapter5/demo5-8/demo5-8/Debug
+/Chapter5/demo5-8/ipch/DEMO5-8-ffbe88
