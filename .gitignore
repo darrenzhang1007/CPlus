@@ -22,3 +22,11 @@
 /Chapter5/demo5-8/Debug
 /Chapter5/demo5-8/demo5-8/Debug
 /Chapter5/demo5-8/ipch/DEMO5-8-ffbe88
+*.lastbuildstate
+*.tlog
+*.log
+*.obj
+*.idb
+*.pdb
+*.exe
+*.ilk
