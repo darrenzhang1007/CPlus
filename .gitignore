@@ -30,3 +30,6 @@
 *.pdb
 *.exe
 *.ilk
+/Chapter6/08_function/08_function/Debug
+/Chapter6/08_function/ipch/08_FUNCTION-f139fe93
+/Chapter6/07_overload/ipch/07_OVERLOAD-3a2a7e52
