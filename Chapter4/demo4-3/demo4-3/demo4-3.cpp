@@ -9,9 +9,9 @@ using namespace std;
 
 int main()
 {
-//	char strHelloWorld[10] = { "helloworld" };  // 会报错
-//	char strHelloWorld[11] = { "helloworld" };
-//	char strHelloWorld[] = { "helloworld" };
+	//char strHelloWorld[10] = { "helloworld" };  // 会报错
+	//char strHelloWorld[11] = { "helloworld" };
+	//char strHelloWorld[] = { "helloworld" };
 
 	// 定义一个数组
 	char strHelloWorld[11] = { "helloworld" };     // 这个定义可以
