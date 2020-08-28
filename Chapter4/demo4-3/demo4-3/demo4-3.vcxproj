@@ -142,7 +142,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="asciiHelloWorld.txt" />
     <Text Include="ReadMe.txt" />
+    <Text Include="utf16HelloWorldBD.txt" />
+    <Text Include="utf16HelloWorldLD.txt" />
+    <Text Include="utf8HelloWorld.txt" />
+    <Text Include="utf8HelloWorldBOM.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />

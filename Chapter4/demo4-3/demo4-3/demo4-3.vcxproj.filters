@@ -16,6 +16,21 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="asciiHelloWorld.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="utf8HelloWorld.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="utf8HelloWorldBOM.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="utf16HelloWorldBD.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="utf16HelloWorldLD.txt">
+      <Filter>源文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
