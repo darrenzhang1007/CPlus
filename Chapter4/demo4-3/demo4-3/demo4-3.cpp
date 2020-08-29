@@ -9,14 +9,12 @@ using namespace std;
 
 int main()
 {
-	//char strHelloWorld[10] = { "helloworld" };  // 会报错
-	//char strHelloWorld[11] = { "helloworld" };
-	//char strHelloWorld[] = { "helloworld" };
-
-	// 定义一个数组
-	char strHelloWorld[11] = { "helloworld" };     // 这个定义可以
+	//char strHelloWorld[10] = { "helloworld" };  // 会报错，缺少一个元素`\0`的空间
+	char strHelloWorld[11] = { "helloworld" };    // 定义一个数组
+	char strHelloWorld2[] = { "helloworld" };
 	char* pStrHelloWrold = "helloworld";
-	pStrHelloWrold = strHelloWorld;
+
+	//pStrHelloWrold = strHelloWorld;
 	//strHelloWorld = pStrHelloWrold;               // 数组变量的值不允许改变
 
 	// 字符0, '\0', '0'的区别
@@ -24,24 +22,24 @@ int main()
 	//char c2 = '\0';
 	//char c3 = '0';
 
-	/* 数组操作
+	// 数组操作
 	// 通过数组变量遍历修改数组中的元素值
-	for (int index = 0; index < strlen(strHelloWorld); ++index)
-	{
-		strHelloWorld[index] += 1;
-		std::cout << strHelloWorld[index] << std::endl;
-	}
-	// 通过指针变量遍历修改数组中的元素值
-	for (int index = 0; index < strlen(strHelloWorld); ++index)
-	{
-		pStrHelloWrold[index] += 1;
-		std::cout << pStrHelloWrold[index] << std::endl;
-	}
+	//for (int index = 0; index < strlen(strHelloWorld); ++index)
+	//{
+	//	strHelloWorld[index] += 1;
+	//	std::cout << strHelloWorld[index] << std::endl;
+	//}
+	//// 通过指针变量遍历修改数组中的元素值
+	//for (int index = 0; index < strlen(strHelloWorld); ++index)
+	//{
+	//	pStrHelloWrold[index] += 1;
+	//	std::cout << pStrHelloWrold[index] << std::endl;
+	//}
 
 	cout << endl;  // 换行
 	cout << "字符串长度为: " << strlen(strHelloWorld) << endl;  // 计算字符串长度
 	cout << "字符串占用空间为:  " << sizeof(strHelloWorld) << endl;
-	*/
+	
 	return 0;
 }
 

@@ -11,20 +11,19 @@ const unsigned int STR_LEN_NUM = 7;
 const unsigned int NUM_TO_COPY = 2;
 int main()
 {
-	/*字符串比较
-	char strHelloWorld1[] = { "helloworld" };
-	cout << strlen(strHelloWorld1) << endl;
-	cout << sizeof(strHelloWorld1) << endl;
+	/* ============ 字符串比较 ============ */
+	//char strHelloWorld1[] = { "helloworld" };
+	//cout << strlen(strHelloWorld1) << endl;
+	//cout << sizeof(strHelloWorld1) << endl;
 
-	char strHelloWorld2[] = { "helloworld" };
-	char strHelloWorld3[] = { "hflloworld" };
-	char strHelloWorld4[] = { "hdlloworld" };
-	cout << strcmp(strHelloWorld1, strHelloWorld2) << endl;
-	cout << strcmp(strHelloWorld1, strHelloWorld3) << endl;
-	cout << strcmp(strHelloWorld1, strHelloWorld4) << endl;
-	*/
+	//char strHelloWorld2[] = { "helloworld" };
+	//char strHelloWorld3[] = { "hflloworld" };
+	//char strHelloWorld4[] = { "hdlloworld" };
+	//cout << strcmp(strHelloWorld1, strHelloWorld2) << endl;
+	//cout << strcmp(strHelloWorld1, strHelloWorld3) << endl;
+	//cout << strcmp(strHelloWorld1, strHelloWorld4) << endl;
 
-	// 字符串的拷贝 链接操作
+	/* ======= 字符串的拷贝、链接操作 ===== */
 	char strHelloWorld1[] = { "hello" };
 	char strHelloWorld2[] = { "world" };
 	char strHelloWorld3[MAX_LEN_NUM] = { 0 };
@@ -35,13 +34,16 @@ int main()
 	//strcat(strHelloWorld3, strHelloWorld2);  // 将2和3链接  -> wolloworld
 	strcat_s(strHelloWorld3, MAX_LEN_NUM, strHelloWorld2);
 	//unsigned int len = strlen(strHelloWorld3);
+
 	unsigned int len = strnlen_s(strHelloWorld3, MAX_LEN_NUM);
 	for (unsigned int index = 0; index < len; ++index) {
 		cout << strHelloWorld3[index] << " "; 
 	}
 	cout << endl;
-	//strcat(strHelloWorld2, "Welcome to C++");  // 会造成缓冲区溢出的问题，通过新的API来解决问题
-	//strcat_s(strHelloWorld2, STR_LEN_NUM, "Welcome to C++");  // 
+
+	/* ========== 字符串的拼接操作 ======== */
+	//strcat(strHelloWorld2, "Welcome to C++++++++++++++++++++++++++++++++++");  // 会造成缓冲区溢出的问题，可能会篡改别的变量的值，通过新的API来解决问题
+	strcat_s(strHelloWorld2, STR_LEN_NUM, "Welcome to C++");  // 
 
     return 0;
 }
