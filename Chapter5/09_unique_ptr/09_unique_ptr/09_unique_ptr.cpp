@@ -1,13 +1,9 @@
-// 09_unique_ptr.cpp : 定义控制台应用程序的入口点。
-//
-
 #include "stdafx.h"
 
 #include <memory>
 #include <iostream>
 using namespace std;
-int main()
-{
+int main() {
 	{// 在这个范围之外，unique_ptr被释放
 		auto i = unique_ptr<int>(new int(10)); // auto可以自动检测数据类型
 		cout << *i << endl;

@@ -45,20 +45,20 @@ void Test(){
 	cout << tB.use_count() << endl;
 	tA->pb = tB;
 	tB->pa = tA;
-	cout << tA.use_count() << endl; // 2
-	cout << tB.use_count() << endl; // 2
+	cout << tA.use_count() << endl;  // 2
+	cout << tB.use_count() << endl;  // 2
 }
 
 void Test2() {
 	cout << "Test weak_ptr and shared_ptr" << endl;
 	shared_ptr<AW> tA(new AW());
 	shared_ptr<BW> tB(new BW());
-	cout << tA.use_count() << endl; // 1
-	cout << tB.use_count() << endl; // 1
+	cout << tA.use_count() << endl;  // 1
+	cout << tB.use_count() << endl;  // 1
 	tA->pb = tB;
-	tB->pa = tA;
-	cout << tA.use_count() << endl; // 1
-	cout << tB.use_count() << endl; // 2
+	tB->pa = tA; 
+	cout << tA.use_count() << endl;  // 1
+	cout << tB.use_count() << endl;  // 2
 }
 
 int main() {

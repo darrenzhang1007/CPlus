@@ -3,12 +3,14 @@ using namespace std;
 
 int a = 0; // (GVAR)全局初始化区
 int* p1; // (bss)全局未初始化区
-int main() {  // test代码区
+
+int main() { 
 	int b = 1; //(stack)栈区变量
 	char s[] = "abc"; //(stack)栈区变量
 	int* p2 = NULL; //(stack)栈区变量
 	char *p3 = "123456"; //123456\0在常亮区，p3在（stack）栈区
 	static int c = 0; //(GVAR)全局（静态）初始化区
+	
 	p1 = new int(10); //(heap)堆区变量
 	p2 = new int(20); //(heap)堆区变量
 	char* p4 = new char[7]; //(heap)堆区变量
@@ -27,7 +29,7 @@ int main() {  // test代码区
 	}
 	if (p4 != NULL)
 	{
-		delete[] p4;
+		delete[] p4;  // 对于数组的删除
 		p4 = NULL;
 	}
 	
