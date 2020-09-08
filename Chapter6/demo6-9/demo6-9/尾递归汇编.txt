@@ -1,0 +1,39 @@
+// 尾递归
+int Fib2(int n, int ret0,  int ret1)
+{
+00E216F0  push        ebp  
+00E216F1  mov         ebp,esp  
+	if (n == 0)
+00E216F3  mov         eax,dword ptr [n]  
+00E216F6  push        esi  
+00E216F7  mov         esi,dword ptr [ret0]  
+00E216FA  test        eax,eax  
+00E216FC  je          Fib2+22h (0E21712h)  
+00E216FE  mov         edx,dword ptr [ret1]  
+	}
+	else if (n == 1)
+00E21701  cmp         eax,1  
+00E21704  je          Fib2+27h (0E21717h)  
+	}
+	return Fib2(n - 1, ret1, ret0 + ret1);
+00E21706  lea         ecx,[esi+edx]  
+00E21709  mov         esi,edx  
+00E2170B  mov         edx,ecx  
+00E2170D  sub         eax,1  
+00E21710  jne         Fib2+11h (0E21701h)  
+	{
+		return ret0;
+00E21712  mov         eax,esi  
+	{
+		return ret0;
+00E21714  pop         esi  
+}
+00E21715  pop         ebp  
+00E21716  ret  
+	{
+		return ret1;
+00E21717  mov         eax,edx  
+00E21719  pop         esi  
+}
+00E2171A  pop         ebp  
+00E2171B  ret  

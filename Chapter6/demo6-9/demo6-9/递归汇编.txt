@@ -1,0 +1,59 @@
+// 递归
+int Fib(int n)
+{
+001819B0  push        ebp  
+001819B1  mov         ebp,esp  
+001819B3  sub         esp,0C0h  
+001819B9  push        ebx  
+001819BA  push        esi  
+001819BB  push        edi  
+001819BC  lea         edi,[ebp-0C0h]  
+001819C2  mov         ecx,30h  
+001819C7  mov         eax,0CCCCCCCCh  
+001819CC  rep stos    dword ptr es:[edi]  
+	if (n == 0)
+001819CE  cmp         dword ptr [n],0  
+001819D2  jne         Fib+2Ah (01819DAh)  
+	{
+		return 0;
+001819D4  xor         eax,eax  
+001819D6  jmp         Fib+5Bh (0181A0Bh)  
+001819D8  jmp         Fib+5Bh (0181A0Bh)  
+	}
+	else if (n == 1)
+001819DA  cmp         dword ptr [n],1  
+001819DE  jne         Fib+39h (01819E9h)  
+	{
+		return 1;
+001819E0  mov         eax,1  
+001819E5  jmp         Fib+5Bh (0181A0Bh)  
+	}
+	else
+001819E7  jmp         Fib+5Bh (0181A0Bh)  
+	{
+		return Fib(n - 1) + Fib(n - 2);
+001819E9  mov         eax,dword ptr [n]  
+001819EC  sub         eax,1  
+	{
+		return Fib(n - 1) + Fib(n - 2);
+001819EF  push        eax  
+001819F0  call        Fib (0181005h)  
+001819F5  add         esp,4  
+001819F8  mov         esi,eax  
+001819FA  mov         ecx,dword ptr [n]  
+001819FD  sub         ecx,2  
+00181A00  push        ecx  
+00181A01  call        Fib (0181005h)  
+00181A06  add         esp,4  
+00181A09  add         eax,esi  
+	}
+}
+00181A0B  pop         edi  
+00181A0C  pop         esi  
+00181A0D  pop         ebx  
+00181A0E  add         esp,0C0h  
+00181A14  cmp         ebp,esp  
+00181A16  call        __RTC_CheckEsp (0181127h)  
+00181A1B  mov         esp,ebp  
+00181A1D  pop         ebp  
+00181A1E  ret  

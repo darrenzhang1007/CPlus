@@ -1,0 +1,31 @@
+	
+	
+	
+	MaxValue(x, y);
+00CC167C  mov         eax,dword ptr [x]  
+00CC167F  cmp         eax,dword ptr [y]  
+00CC1682  jle         main+3Fh (0CC168Fh)  
+00CC1684  mov         ecx,dword ptr [x]  
+00CC1687  mov         dword ptr [ebp-0DCh],ecx  
+00CC168D  jmp         main+48h (0CC1698h)  
+00CC168F  mov         edx,dword ptr [y]  
+00CC1692  mov         dword ptr [ebp-0DCh],edx  
+
+
+	Fib(5);
+011238A8  mov         eax,5  
+011238AD  test        eax,eax  
+011238AF  jne         main+55h (011238B5h)  
+011238B1  jmp         main+85h (011238E5h)  
+011238B3  jmp         main+85h (011238E5h)  
+011238B5  mov         ecx,5  
+011238BA  cmp         ecx,1  
+011238BD  jne         main+63h (011238C3h)  
+011238BF  jmp         main+85h (011238E5h)  
+011238C1  jmp         main+85h (011238E5h)  
+011238C3  mov         edx,5  
+011238C8  sub         edx,1  
+011238CB  push        edx  
+011238CC  call        Fib (0112132Ah)  
+011238D1  add         esp,4  
+011238D4  mov         eax,5  
