@@ -1,7 +1,7 @@
 /*
  * @Author: DarrenZhang
  * @Date: 2021-11-21 15:36:42
- * @LastEditTime: 2021-11-21 15:39:07
+ * @LastEditTime: 2021-11-21 15:40:32
  * @LastEditors: Please set LastEditors
  * @Description: C++ style to allcate and delete memory
  * @FilePath: /CPlus/shiqiyu_cplus/5.4_allocate_memory_cplus.cpp
@@ -64,7 +64,7 @@ int main()
     delete psa1;
     //deallocate the memory of the array, and call the destructors of all the elements
     delete[] psa2;
-    // 释放所有内存，只会把第一个元素的析构函数，64行代码会调用所有元素的析构函数
+    // 释放所有内存，只会调用第一个元素的析构函数，64行代码会调用所有元素的析构函数
 
     return 0;
 }
