@@ -45,3 +45,8 @@
 *.pch
 *.ipch
 /Chapter5/demo5-7/demo5-7/x64/Debug
+CMakeFiles
+Makefile
+C___Primer_Plus
+cmake_install.cmake
+CMakeCache.txt
