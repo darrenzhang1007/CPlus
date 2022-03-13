@@ -60,16 +60,15 @@ int main()
     cout << "Number of things' element = " << num_elements << endl;
 
     // =========== C++ 11 中数组初始化方式 =========== //
+    // 1. 初始化数组，可省略 =
     double earnings[4]{1.2e4, 1.6e4, 1.1e4, 1.7e4}; // ok with C++11
-    unsigned int counts[10]{};                      // all elements set to 0
-    float balances[100]{};                          // all elements set to 0
-
-    // 浮点数转换为整型是缩窄操作，编译不能通过 not allowed
-    // long plifs[] = {25, 92, 3.0};
-    // 1122011超出了char变量的取值范围(假设char变量的长度为8位，则取值范围为[0, 255])，not allowed
-    // char slifs[4] {'h', 'i', 1122011, '\0'};
-    // 112在char变量的取值范围内，char类型也是一种整型类型，所以编译可以通过
-    char tlifs[4]{'h', 'i', 112, '\0'}; // allowed
+    // 2. 如果大括号中没有任何内容，将会把所有元素初始化为0
+    unsigned int counts[10]{}; // all elements set to 0
+    float balances[100]{};     // all elements set to 0
+    // 3. 列表初始化禁止 缩窄转换
+    // long plifs[] = {25, 92, 3.0}; // not allowed, 浮点数转换为整型是缩窄操作，编译不能通过
+    // char slifs[4] {'h', 'i', 1122011, '\0'}; // not allowed, 1122011超出了char变量的取值范围(假设char变量的长度为8位，则取值范围为[0, 255])
+    char tlifs[4]{'h', 'i', 112, '\0'}; // allowed, 112在char变量的取值范围内，char类型也是一种整型类型，所以编译可以通过
 
     return 0;
 }
