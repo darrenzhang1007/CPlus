@@ -1,19 +1,22 @@
-/*************************************************************************
-	> File Name: homework.cpp
-	> Author: DarrenZhang
-	> Mail: darrenzhang1007@163.com
-	> Created Time: 2021-03-26-4:12 PM
- ************************************************************************/
+/***
+ * @Author       : DarrenZhang
+ * @Date         : 2022-03-14 10:05:31
+ * @LastEditTime : 2022-03-14 19:48:22
+ * @LastEditors  : DarrenZhang
+ * @Description  : 混合输入字符串和数字
+ * @FilePath     : \CPlus\C++_Primer_Plus\chapter04\4-6_numstr.cpp
+ */
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main()
+{
     cout << "What year was your house built?" << endl;
     int year;
     cin >> year;
-    cin.get();
-//    (cin >> year).get();
+    cin.get(); // read enter line
+    // (cin >> year).get();
     cout << "What is its street address?" << endl;
 
     char address[80];
@@ -23,5 +26,4 @@ int main() {
     cout << "Done!" << endl;
 
     return 0;
-
 }
