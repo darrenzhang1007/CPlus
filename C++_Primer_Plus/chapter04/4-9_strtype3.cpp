@@ -23,7 +23,7 @@ int main()
 
     // assignment for string objects and character arrays
     str1 = str2;            // copy str2 to str1
-    strcpy(charr1, charr2); // copy str2 to str1
+    strcpy(charr1, charr2); // copy charr2 to charr1
 
     // appending for string objects and character arrays
     str1 += " paste";         // add paste to end od str1
@@ -41,6 +41,7 @@ int main()
     strcat(charr3, charr2);
     // string class
     str3 = str1 + str2;
+    cout << "str3: " << str3<< endl;
 
     return 0;
 }

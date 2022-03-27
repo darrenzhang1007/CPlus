@@ -37,6 +37,5 @@ int main()
     cin >> x; // read a value into a basic C++ type
     cout << x << endl;
 
-
     return 0;
 }
