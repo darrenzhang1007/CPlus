@@ -25,3 +25,6 @@ int main() {
     return 0;
 }
 
+// Values: updates = 6, *p_updates = 6
+// Address: updates = 0x7ffcea931a8c, *p_updates = 0x7ffcea931a8c
+// Now, updates = 7

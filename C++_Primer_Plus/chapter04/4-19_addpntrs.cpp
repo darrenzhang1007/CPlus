@@ -39,6 +39,22 @@ int main() {
     cout << "&tell = " << &tell << endl;  // 整个数组的起始地址
     cout << "&tell + 1 = " << &tell + 1 << endl;  // &tell + 1跨过了20个字节
 
-
     return 0;
 }
+
+// pw = 0x7ffffed51c10, *pw = 10000
+// add 1 to the pw pointer: 
+// pw = 0x7ffffed51c18, *pw = 20000
+// ps = 0x7ffffed51bea, *ps = 3
+// add 1 to the ps pointer: 
+// ps = 0x7ffffed51bec, *ps = 2
+// access two elements with array notation
+// stacks[0] = 3, stacks[1] = 2
+// access two elements with pointer notation
+// *stacks = 3, *(stacks + 1) = 2
+// 24 = size of wages array
+// 8 = size of pw pointer
+// tell  = 0x7ffffed51bf0
+// tell + 1 = 0x7ffffed51bf2
+// &tell = 0x7ffffed51bf0
+// &tell + 1 = 0x7ffffed51c04
