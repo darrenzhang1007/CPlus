@@ -50,3 +50,5 @@ Makefile
 C___Primer_Plus
 cmake_install.cmake
 CMakeCache.txt
+
+main
